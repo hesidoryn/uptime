@@ -10,9 +10,6 @@
             git:
                  repo: https://github.com/hesidoryn/uptime.git
                  dest: /root/project
-          # - name: Install pip
-          #   easy_install: name=pip state=latest
-          #   become: true
 
           - name : Install docker-py
             pip:
