@@ -1,2 +1,2 @@
 [Hosts]
-46.101.138.53 ansible_ssh_user=root
+46.101.175.9 ansible_ssh_user=root

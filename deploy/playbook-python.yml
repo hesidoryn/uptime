@@ -1,0 +1,7 @@
+---
+    - name: Install docker
+      hosts: Hosts
+      gather_facts: false
+      tasks:
+        - name: Install Python 2
+          raw: apt -y update && apt -y install python-minimal
