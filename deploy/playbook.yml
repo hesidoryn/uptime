@@ -3,3 +3,10 @@
       hosts: Hosts
       roles:
           - angstwad.docker_ubuntu
+      tasks:
+          - name: Make project dir
+            file: path=/root/project state=directory
+          - name: Clone project
+            git:
+                 repo: https://github.com/hesidoryn/uptime.git
+                 dest: /root/project
